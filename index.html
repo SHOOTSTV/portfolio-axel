@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ce site est le portfolio personnel d'Axel Stankiewicz"
+    />
+    <meta name="author" content="Axel Stankiewicz" />
+    <meta property="og:title" content="Portfolio d'Axel Stankiewicz" />
+    <meta
+      property="og:description"
+      content="Développeur Front-End, à la recherche d'une alternance."
+    />
+    <meta property="og:image" content="./assets/favicon.svg" />
+    <title>Axel Stankiewicz Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Axel Stankiewicz</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Axel Stankiewicz</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- HERO  -->
+    <section id="profile">
+      <div class="section__pic-container reveal">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Axel Stankiewicz Image de profil"
+          class="reveal-2"
+        />
+      </div>
+      <div class="section__text reveal">
+        <p class="section__text__p1 reveal-3">Bonjour, je suis</p>
+        <h1 class="title reveal-3">Axel Stankiewicz</h1>
+        <p class="section__text__p2 reveal-3">Développeur Frontend</p>
+        <div class="btn-container reveal-4">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-axel.pdf')"
+          >
+            Mon CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Mon profil linkedin"
+            class="icon reveal-4"
+            onclick="window.open('https://www.linkedin.com/in/axelstankiewicz/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Mon profil github"
+            class="icon reveal-4"
+            onclick="window.open('https://github.com/SHOOTSTV')"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT  -->
+    <section id="about">
+      <p class="section__text__p1">En apprendre plus</p>
+      <h1 class="title">A propos de moi</h1>
+      <div class="section-container reveal">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Photo A Propos"
+            class="about-pic reveal-2"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container reveal-3">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Formations</h3>
+              <p>BTS SIO option SLAM</p>
+              <p>Cours OpenClassRooms</p>
+            </div>
+            <div class="details-container reveal-3">
+              <img
+                src="./assets/softskills.png"
+                alt="soft skills icon"
+                class="icon"
+              />
+              <h3>Soft skills</h3>
+              <p>Créatif, dynamique et <br />esprit d'équipe</p>
+            </div>
+          </div>
+          <div class="text-container reveal-4">
+            <p>
+              Lors de la réalisation de mon projet de fin d'année de
+              baccalauréat, j'ai découvert le monde de la programmation, ce qui
+              m'a poussé à poursuivre avec un BTS SIO, que j'ai obtenu.
+              Désormais je suis à la recherche d'une opportunité d'alternance
+              dans ce domaine afin d'améliorer mes compétences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="flèche icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- COMPETENCES  -->
+    <section id="experience">
+      <p class="section__text__p1">Voici mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container reveal">
+        <div class="about-containers">
+          <div class="details-container reveal-3">
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sass</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container reveal-3">
+            <h2 class="experience-sub-title">Backend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Symfony</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="flèche icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <!-- PROJETS  -->
+    <section id="projects">
+      <p class="section__text__p1">Voici mes</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container reveal">
+        <div class="about-containers reveal-3">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="projet 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Mediatek86</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/SHOOTSTV/mediatekformation')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="projet 2"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Bedrine</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/SHOOTSTV/refonte-site-bedrineweb')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://shootstv.github.io/refonte-site-bedrineweb/')"
+                >
+                  Live démo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="projet 3"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Coming soon</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href=''"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="flèche icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- CONTACT  -->
+    <section id="contact">
+      <p class="section__text__p1">Pour une demande ou autre question</p>
+      <h1 class="title">Contactez moi ici</h1>
+      <div class="contact-info-upper-container reveal">
+        <div class="contact-info-container reveal-3">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:stankiewiczaxel1@gmail.com"
+              >stankiewiczaxel1@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container reveal-3">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/axelstankiewicz/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER  -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Axel Stankiewicz. All Rights Reserved.</p>
+    </footer>
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
