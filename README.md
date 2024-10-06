@@ -1,4 +1,4 @@
-# Axel Stankiewicz Portfolio
+# Mon Portfolio
 
 Bienvenue sur mon portfolio personnel, hébergé sur [Netlify](https://axelstz.netlify.app/). Ce site présente mes compétences, expériences, et projets dans le domaine du développement web, principalement orienté vers le **Frontend**.
 
